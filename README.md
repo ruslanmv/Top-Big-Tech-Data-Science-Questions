@@ -171,7 +171,7 @@ And we have a positive sign, which means that an increase in the hours spent stu
 
 It is a matrix that has 2 rows and 2 columns. It has 4 outputs that a binary classifier provides to it. It is used to derive various measures like specificity, error rate, accuracy, precision, sensitivity, and recall.
 
-![Imgur](README/CzzA5jR.png) 2
+![Imgur](assets/images/posts/README/CzzA5jR.png) 2
 
 
 
@@ -240,15 +240,15 @@ To answer this question, we need to know the concept of bias and variance first.
 
 - Bias is a measures the difference between the mean prediction of our machine learning model with the actual value of data points that we try to predict. If our model produces a high bias, this means that our model is too simple to capture the pattern of our data. And this means we have an underfitting case. Below is a prediction that comes from a model with a high bias.
 
-![Imgur](README/TTartc6.png)
+![Imgur](assets/images/posts/README/TTartc6.png)
 
 - Variance  measures the spread of model prediction for a given data point. If our model produces a high variance on an unseen data point, this means that our model is very sensitive to small changes in training data because it tries too hard to follow the pattern of our training data. And this means we have an overfitting case. Below is a prediction that comes from a model with a high variance.
 
-![Imgur](README/rcCvkH6.png)
+![Imgur](assets/images/posts/README/rcCvkH6.png)
 
 To understand bias and variance in a clearer way, let's take a look at the below visualization.
 
-![Imgur](README/Z9lj2OH.png)
+![Imgur](assets/images/posts/README/Z9lj2OH.png)
 
 Controlling bias and variance can normally be done by adjusting the model's complexity (i.e whether to use linear regression, second-order polynomial regression, third order polynomial regression, and so on).
 
@@ -276,7 +276,7 @@ In other words, Bias measures how far off are the prediction of our model to the
 
 Variance can be described as the spread of the model's prediction of a given data point. Variance tells us how big is the variability of our model's prediction for a given point.
 
-![Imgur](README/cdWUERvm.jpeg)
+![Imgur](assets/images/posts/README/cdWUERvm.jpeg)
 
 Our machine learning model will have:
 
@@ -289,7 +289,7 @@ The model that is too simple (high bias) or too complex (high variance) would no
 
 Thus, what we need to do is to find the sweet spot where the bias and the variance error intersect each other in the error vs model complexity graph below.
 
-![Imgur](README/EPOQCkjm.jpeg)
+![Imgur](assets/images/posts/README/EPOQCkjm.jpeg)
 
 In this intersection, we find a perfectly balanced model that will perform well on unseen data.
 
@@ -376,7 +376,7 @@ There are two simple ways to detect if the new observation is an outlier:
 
 If our data is normally distributed, then we can use standard deviation to detect an outlier. In data with a normal distribution, 68% of the data points would lie within one standard deviation. Meanwhile, 95% of data points would lie within two standard deviations and 99.7% of data points would lie within three standard deviations.
 
-![Imgur](README/ACrTnS0.png)
+![Imgur](assets/images/posts/README/ACrTnS0.png)
 
 If our new data point lies within more than three standard deviations, then we can consider it as an outlier.
 
@@ -384,7 +384,7 @@ If our new data point lies within more than three standard deviations, then we c
 
 Boxplot is a visualization method of numerical data related to its quantiles. As you can see in the image below, a boxplot would typically show us the median, an upper quartile (**Q3**), a lower quartile (**Q1**), an interquartile (**IQR = Q3-Q1**), an upper whisker (**Q3 + 1.5\*IQR**), and a lower whisker (**Q1 - 1.5\*IQR**).
 
-![Imgur](README/QBebr3H.png)
+![Imgur](assets/images/posts/README/QBebr3H.png)
 
 If our new data point resides higher than the upper whisker or below the lower whisker, then we can consider our new observation as an outlier.
 
