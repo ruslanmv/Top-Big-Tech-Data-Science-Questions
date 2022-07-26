@@ -12,7 +12,6 @@ Big Tech, also known as the Tech Giants, Big Four, or Big Five, is a name given 
 
 
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1311652168&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ruslanmv" title="Ruslan Magana Vsevolodovna" target="_blank" style="color: #cccccc; text-decoration: none;">Ruslan Magana Vsevolodovna</a> · <a href="https://soundcloud.com/ruslanmv/top_big_tech_data_science_questions_part_1" title="Top Big Tech Data Science Questions Part 1" target="_blank" style="color: #cccccc; text-decoration: none;">Top Big Tech Data Science Questions Part 1</a></div>
 
 # Data Science Questions 
 
@@ -337,11 +336,11 @@ Variance measures the spread between data points in a dataset with respect to it
 
 To calculate a sample variance, the following equation applies:
 
-s^2 = \frac{1}{n-1}\sum^n_{i=1}(x_i-\bar{x})^2*s*2=*n*−11∑*i*=1*n*(*x**i*−*x*ˉ)2
+s^2 = \frac{1}{n-1}\sum^n_{i=1}(x_i-\bar{x})^2
 
 Meanwhile, for a population variance, the following equation applies:
 
-\sigma^2= \frac{1}{N}\sum^N_{i=1}(x_i-\mu)^2*σ*2=*N*1∑*i*=1*N*(*x**i*−*μ*)2
+\sigma^2= \frac{1}{N}\sum^N_{i=1}(x_i-\mu)^2
 
 where:
 
@@ -356,7 +355,7 @@ If we take a look at both equations, there is a slight difference between a samp
 
 The main reason behind this is that the calculation of sample variance will contain a little bias. When we are working with sample data, normally we're working with a small subset of population data, hence any of our sample data points will be closer to ***x_bar*** instead of ***μ***. Thus, the sum of squares of sample variance would be lower than the sum of squares of the population variance, i.e
 
-\sum^n_{i=1}(x_i-\bar{x})^2 < \sum^N_{i=1}(x_i-\mu)^2∑*i*=1*n*(*x**i*−*x*ˉ)2<∑*i*=1*N*(*x**i*−*μ*)2
+\sum^n_{i=1}(x_i-\bar{x})^2 < \sum^N_{i=1}(x_i-\mu)^2
 
 subtracting the denominator of sample variance with 1 would give a good adjustment and unbiased estimation in relation to population variance.
 
@@ -501,7 +500,6 @@ It stands for Receiver Operating Characteristic. It is basically a plot between 
 
 The ROC curve is a graphical representation of the contrast between true positive rates and false positive rates at various thresholds. It is often used as a proxy for the trade-off between the sensitivity(true positive rate) and false positive rate.
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1311658216&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ruslanmv" title="Ruslan Magana Vsevolodovna" target="_blank" style="color: #cccccc; text-decoration: none;">Ruslan Magana Vsevolodovna</a> · <a href="https://soundcloud.com/ruslanmv/top-big-tech-data-science-questions-part-2" title="Top Big Tech Data Science Questions Part 2" target="_blank" style="color: #cccccc; text-decoration: none;">Top Big Tech Data Science Questions Part 2</a></div>
 
 # Part 2
 
@@ -961,7 +959,6 @@ The Naive Bayes Algorithm model is based on the Bayes Theorem. It describes the 
 
 It assumes all features are independent and identically distributed.
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1311658894&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ruslanmv" title="Ruslan Magana Vsevolodovna" target="_blank" style="color: #cccccc; text-decoration: none;">Ruslan Magana Vsevolodovna</a> · <a href="https://soundcloud.com/ruslanmv/top-big-tech-data-science-questions-part-3" title="Top Big Tech Data Science Questions Part 3" target="_blank" style="color: #cccccc; text-decoration: none;">Top Big Tech Data Science Questions Part 3</a></div>
 
 # Part 3
 
@@ -973,17 +970,17 @@ It is a type of logistic regression in logistic regression, we fit data to find 
 
 In Bayesian Logistic Regression, we can model classical Logistic Regression with either of these two options:
 
-- Using Bernoulli likelihood: y*y* is a binary dependent variable, which is the result of a Bernoulli trial with the success probability of p*p*
-- Using binomial likelihood: y*y* is a discrete dependent variable, which is the number of successes of n*n* Bernoulli trials
+- Using Bernoulli likelihood: y is a binary dependent variable, which is the result of a Bernoulli trial with the success probability of p
+- Using binomial likelihood: y is a discrete dependent variable, which is the number of successes of n Bernoulli trials
 
-We also need to add prior distribution of the model's intercept and weight (\theta_0*θ*0 and \theta_1*θ*1) in advance, that is:
+We also need to add prior distribution of the model's intercept and weight (\theta_0 and \theta_1) in advance, that is:
 
-- prior distribution \theta_0*θ*0: our prior knowledge about model's intercept
-- prior distribution \theta_1*θ*1: our prior knowledge about model's weight for feature 1
+- prior distribution \theta_0: our prior knowledge about model's intercept
+- prior distribution \theta_1: our prior knowledge about model's weight for feature 1
 
-The main goal of Bayesian Logistic Regression is to build a Logistic Regression model with the data that we have (i.e our feature x_1*x*1 and corresponding label Y*Y*), and then find the posterior distribution of our model's intercept and weight, that is:
+The main goal of Bayesian Logistic Regression is to build a Logistic Regression model with the data that we have (i.e our feature x_1 and corresponding label Y), and then find the posterior distribution of our model's intercept and weight, that is:
 
-P(\theta | y) = P(\theta_0, \theta_1 | y)*P*(*θ*∣*y*)=*P*(*θ*0,*θ*1∣*y*)
+P(\theta | y) = P(\theta_0, \theta_1 | y)
 
 ### 102. What are a few examples of machine learning models that don't benefit from the scaling/standardizing of features? What are a few examples of models for which scaling the features is generally recommended?
 
@@ -1321,37 +1318,36 @@ Customers address changing is an example of a slowly changing dimension. We can 
 
 Flipping a coin can be classified as a Bernoulli distribution problem and to solve this question, we need to know the Probability Mass Function (PMF) of as follows:
 
-P(X=k) = p^k(1-p)^{1-k}*P*(*X*=*k*)=*p**k*(1−*p*)1−*k*
+P(X=k) = p^k(1-p)^{1-k}
 
 where k*k* is the outcome of the trial (it's either 0 or1) and p*p* is the probability of success (getting heads). In a fair coin, p*p* can be set to 0.5, but since we have a biased coin, then let's keep calling it p*p*.
 
 The Maximum Likelihood Estimation (MLE) aims to find the coefficient that maximizes p*p* given our data or trials. Let's say that we call our trials X_1*X*1, X_2*X*2,...,X_n*X**n*, then our MLE equation would be:
 
-L(p|X_1,X_2,...,X_n) = P(X = X_1) * P(X = X_2) * ... * P(X=X_n)*L*(*p*∣*X*1,*X*2,...,*X**n*)=*P*(*X*=*X*1)∗*P*(*X*=*X*2)∗...∗*P*(*X*=*X**n*)
+L(p|X_1,X_2,...,X_n) = P(X = X_1) 
 
-L(p|X_1,X_2,...,X_n) = p^{\sum_{i=1}^N x_i} (1-p)^{\sum_{i=1}^N 1-x_i}*L*(*p*∣*X*1,*X*2,...,*X**n*)=*p*∑*i*=1*N**x**i*(1−*p*)∑*i*=1*N*1−*x**i*
+L(p|X_1,X_2,...,X_n) = p^{\sum_{i=1}^N x_i} (1-p)^{\sum_{i=1}^N 1-x_i}
 
 Convert the equation above to log representation:
 
-l = (\ln p)\sum_{i=1}^N x_i + (\ln(1-p))\sum_{i=1}^N (1-x_i)*l*=(ln*p*)∑*i*=1*N**x**i*+(ln(1−*p*))∑*i*=1*N*(1−*x**i*)
+l = (\ln p)\sum_{i=1}^N x_i + (\ln(1-p))\sum_{i=1}^N (1-x_i)
 
 Taking the derivative with respect of p*p*:
 
-\frac{dl}{dp} = \frac{\sum_{i=1}^N x_i}{p} - \frac{\sum_{i=1}^N (1-x_i)}{1-p}*d**p**d**l*=*p*∑*i*=1*N**x**i*−1−*p*∑*i*=1*N*(1−*x**i*)
+\frac{dl}{dp} = \frac{\sum_{i=1}^N x_i}{p} - \frac{\sum_{i=1}^N (1-x_i)}{1-p}
+To maximize the likelihood, we set \frac{dl}{dp} to 00, so we have:
 
-To maximize the likelihood, we set \frac{dl}{dp}*d**p**d**l* to 00, so we have:
-
-(1-p) \sum_{i=1}^N x_i - p \sum_{i=1}^N (1-x_i)=0(1−*p*)∑*i*=1*N**x**i*−*p*∑*i*=1*N*(1−*x**i*)=0
+(1-p) \sum_{i=1}^N x_i - p \sum_{i=1}^N (1-x_i)=0
 
 With substitution, we arrive to the following equation:
 
-\sum_{i=1}^N x_i = pN∑*i*=1*N**x**i*=*pN*
+\sum_{i=1}^N x_i = pN
 
-from the question, we know that from flipping a biased coin N*N* times, it lands heads K*K* times, thus we have \sum_{i=1}^N x_i = K∑*i*=1*N**x**i*=*K*.
+from the question, we know that from flipping a biased coin N times, it lands heads K times, thus we have \sum_{i=1}^N x_i = K
 
 Finally, we arrive to our answer:
 
-p = \frac{K}{N}*p*=*N**K*
+p = \frac{K}{N}
 
 ### 145. What techniques can be used to train a classifier using a large dataset in which only a small proportion of instances are labeled?
 
@@ -1401,7 +1397,6 @@ Whenever the assignment is truly at random, then there should be no statisticall
 
 Both UNION and UNION ALL operators combine rows from result sets into a single result set. The UNION operator removes eliminate duplicate rows, whereas the UNION ALL operator does not. Because the UNION ALL operator does not remove duplicate rows, it runs faster than the UNION operator.
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1311659401&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ruslanmv" title="Ruslan Magana Vsevolodovna" target="_blank" style="color: #cccccc; text-decoration: none;">Ruslan Magana Vsevolodovna</a> · <a href="https://soundcloud.com/ruslanmv/top-big-tech-data-science-questions-part-4" title="Top Big Tech Data Science Questions Part 4" target="_blank" style="color: #cccccc; text-decoration: none;">Top Big Tech Data Science Questions Part 4</a></div>
 
 # Part 4
 
